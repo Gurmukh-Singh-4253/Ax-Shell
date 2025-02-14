@@ -15,7 +15,7 @@ source = ~/.config/Ax-Shell/config/hypr/ax-shell.conf
 """
 
 CONFIG_DIR = os.path.expanduser("~/.config/Ax-Shell")
-WALLPAPERS_DIR_DEFAULT = os.path.expanduser("~/.config/Ax-Shell/assets/wallpapers_example")
+WALLPAPERS_DIR_DEFAULT = os.path.expanduser("~/Pictures/Walls")
 
 # Default key binding values
 bind_vars = {

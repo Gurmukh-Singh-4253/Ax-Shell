@@ -1,4 +1,5 @@
 import operator
+import os
 from collections.abc import Iterator
 from fabric.widgets.box import Box
 from fabric.widgets.label import Label
@@ -211,6 +212,9 @@ class AppLauncher(Box):
                     selected_index = self.selected_index if self.selected_index != -1 else 0
                     if 0 <= selected_index < len(children):
                         children[selected_index].clicked()
+                else:
+                    os.system(text)
+                    self.close_launcher()
 
     def on_search_entry_key_press(self, widget, event):
         keyval = event.keyval
