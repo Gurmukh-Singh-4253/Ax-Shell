@@ -39,6 +39,8 @@ bind_vars = {
     'suffix_toggle': "B",
     'prefix_css': "SUPER SHIFT",
     'suffix_css': "B",
+    'prefix_calc': "ALT",
+    'suffix_calc': "C",
     'wallpapers_dir': WALLPAPERS_DIR_DEFAULT
 }
 
@@ -251,6 +253,7 @@ class HyprConfGUI(Gtk.Window):
             ("App Launcher", 'prefix_launcher', 'suffix_launcher'),
             ("Overview", 'prefix_overview', 'suffix_overview'),
             ("Power Menu", 'prefix_power', 'suffix_power'),
+            ("Calculator", 'prefix_calc', 'suffix_calc')
             ("Toggle Bar and Notch", 'prefix_toggle', 'suffix_toggle'),
             ("Reload CSS", 'prefix_css', 'suffix_css'),
         ]
